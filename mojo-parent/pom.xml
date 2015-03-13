@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns              = "http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi          = "http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
-                               http://maven.apache.org/maven-v4_0_0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                                http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
     <groupId>com.github.goldin</groupId>
-    <artifactId>mojo-parent</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>main.plugins</artifactId>
     <version>0.3-SNAPSHOT</version>
-    <name>[${project.groupId}:${project.artifactId}:${project.version}]</name>
-
-    <parent>
-        <groupId>com.github.goldin</groupId>
-        <artifactId>main.plugins</artifactId>
-        <version>0.3-SNAPSHOT</version>
-        <relativePath>..</relativePath>
-    </parent>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Parent POM for all MOJO modules -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-    <dependencies>
-        <dependency>
-            <groupId>com.github.goldin</groupId>
-            <artifactId>maven-common</artifactId>
-            <version>0.3-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
-
+    <relativePath>..</relativePath>
+  </parent>
+  <groupId>com.github.goldin</groupId>
+  <artifactId>mojo-parent</artifactId>
+  <version>0.3-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>[${project.groupId}:${project.artifactId}:${project.version}]</name>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Parent POM for all MOJO modules -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <dependencies>
+    <dependency>
+      <groupId>com.github.goldin</groupId>
+      <artifactId>maven-common</artifactId>
+      <version>0.3-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
 </project>
